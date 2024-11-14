@@ -28,6 +28,7 @@ body {
 
 .heading {
   padding-bottom: 4.8rem;
+  margin: 0 auto;
 }
 
 .sub-heading {
@@ -64,7 +65,7 @@ body {
   padding: 2.4rem;
   gap: 1.2rem;
   border-radius: 0.9rem;
-  box-shadow: 0 5px 20px hsl(229, 6%, 66%);
+  box-shadow: 0 6px 8px rgba(163, 165, 174, 0.2);
 }
 
 .position {
@@ -124,6 +125,7 @@ svg {
 
   .box {
     width: 31rem;
+    height: 24rem;
   }
 
   .box-cyan {
