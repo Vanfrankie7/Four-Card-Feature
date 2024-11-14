@@ -99,15 +99,13 @@ svg {
 @media (min-width: 48em) {
   .heading {
     justify-self: center;
+    padding-bottom: 6rem;
+    max-width: 60rem;
+    margin: 0 auto;
   }
 
   .container {
     max-width: 130rem;
-    margin: 0 auto;
-  }
-
-  .heading {
-    max-width: 60rem;
     margin: 0 auto;
   }
 
@@ -118,7 +116,7 @@ svg {
   }
 
   .box {
-    width: 40rem;
+    width: 30rem;
   }
 
   .box-cyan {
