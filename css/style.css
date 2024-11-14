@@ -98,17 +98,21 @@ svg {
 /***********************************************/
 
 @media (min-width: 48em) {
+  .container {
+    width: 100%;
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+
+  .container .heading * {
+    text-align: center;
+  }
+
   .heading {
     justify-self: center;
     padding-bottom: 6rem;
     max-width: 60rem;
-    margin: 0 auto;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 120rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 
   .content-box {
@@ -119,7 +123,7 @@ svg {
   }
 
   .box {
-    width: 30rem;
+    width: 31rem;
   }
 
   .box-cyan {
