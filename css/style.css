@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.6;
+}
+
+.container {
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 9px;
+}
+
+.heading {
+  padding-bottom: 4.8rem;
+}
+
+.sub-heading {
+  text-align: center;
+  display: block;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.heading-primary {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  padding-bottom: 1.4rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.text-contents {
+  text-align: center;
+}
+
+.content-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  gap: 1.2rem;
+  border-radius: 0.9rem;
+  box-shadow: 0 5px 20px hsl(229, 6%, 66%);
+}
+
+.position {
+  font-size: 1.8rem;
+  color: hsl(234, 12%, 34%);
+}
+.box-text {
+  padding-bottom: 1.6rem;
+}
+
+.box-cyan {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.box-red {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.box-orange {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.box-blue {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+svg {
+  align-self: flex-end;
+  margin-right: 2.5rem;
+}
+
+/***********************************************/
+/* Media Queries for screen sizes above 768px*/
+/***********************************************/
+
+@media (min-width: 48em) {
+  .heading {
+    justify-self: center;
+  }
+
+  .container {
+    max-width: 130rem;
+    margin: 0 auto;
+  }
+
+  .heading {
+    max-width: 50rem;
+  }
+
+  .content-box {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3rem;
+  }
+
+  .box-cyan {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+  }
+  .box-red {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+  }
+  .box-orange {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+  }
+  .box-blue {
+    grid-column: 5 / 7;
+    grid-row: 2 / 4;
+  }
+}
